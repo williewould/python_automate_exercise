@@ -30,7 +30,7 @@ os.chdir('E:\\桌面')
 #os.makedirs('.\\book')
 
 # 返回绝对路径
-os.path.abspath('.');
+os.path.abspath('.')
 
 # 判定绝对路径和相对路径
 os.path.isabs('.')
