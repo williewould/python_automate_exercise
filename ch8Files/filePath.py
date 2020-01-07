@@ -66,14 +66,3 @@ os.path.isdir('E:\\pythonlianxi')
 os.path.isfile('E:\\pythonlianxi\\zw')
 
 # TODO GOOD
-
-
-
-
-
-
-
-
-
-
-
