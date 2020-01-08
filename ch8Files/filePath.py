@@ -90,3 +90,26 @@ bbbFile.write('you r beautiful')
 content = bbbFile.read()
 bbbFile.close()
 print(content)
+# 保存二进制变量 更方便 保存类型更丰富
+import os, shelve
+os.chdir('E:\\桌面')
+shelfFile = shelve.open('mydata')
+cats = ['Zophie','Pooka','simon']
+shelfFile['cats'] = cats
+shelfFile.close()
+
+shelfFile = shelve.open('mydata')
+list(shelfFile.keys())
+list(shelfFile.values())
+shelfFile.close()
+
+#%% 以py文件保存
+import pprint
+# 构造一个字典列表 cats
+cats = [{'name':'a','desc':'b'},{'name':'p','desc':'fluffy'}]
+pprint.pformat(cats)
+fileObj = open('myCats.py','w')
+fileObj.write('cats = '+pprint.pformat(cats) +'\n')
+fileObj.close()
+import myCats
+myCats.cats[0][name]
