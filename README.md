@@ -13,3 +13,7 @@
 .close()
 
 ```
+### 10100108 学习 ch9--文件管理
+- only copy pdf in a folder **shutil模块**
+- 批量修改文件名 
+- 压缩文件夹到zip文件 **zipfile模块**
