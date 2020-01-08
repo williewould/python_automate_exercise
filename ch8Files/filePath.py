@@ -65,4 +65,28 @@ os.path.exists('E:\\B')
 os.path.isdir('E:\\pythonlianxi')
 os.path.isfile('E:\\pythonlianxi\\zw')
 
-# TODO GOOD
+# %% 文件操作
+# 使用路径方式新建文本文件
+from pathlib import Path
+p = Path('spam.txt')
+p.write_text('Hello,world!')
+p.read_text()
+
+# 打开文件，并得到一个file对象
+helloFile = open('E:\\桌面\\spam.txt')
+helloContent = helloFile.read()
+
+# 按行读取，得到字符串列表，对文件读取只能进行一次，之后文件对象的会被清空
+helloFile = open('E:\\桌面\\spam.txt')
+helloFile.readlines()
+
+# 打开文件，读写操作，w 写模式，直接覆盖
+# a模式，在文本后追加
+bbbFile = open('E:\\桌面\\bbb.txt','w')
+bbbFile.write('you r beautiful\n')
+bbbFile.close()
+bbbFile = open('E:\\桌面\\bbb.txt','a')
+bbbFile.write('you r beautiful')
+content = bbbFile.read()
+bbbFile.close()
+print(content)
