@@ -14,6 +14,6 @@
 
 ```
 ### 20200108 学习 ch9--文件管理
-- only copy pdf in a folder **shutil模块**
+- only copy pdf in a folder。 **shutil模块**，**send2trash**
 - 批量修改文件名 
-- 压缩文件夹到zip文件 **zipfile模块**
+- 压缩文件夹到zip文件。  **zipfile模块**
