@@ -14,7 +14,7 @@ p = Path.home()
 shutil.copy(p/'spam.txt',p/'some_folder')
 
 # 完全制定到文件名，测可以保证复制到米想要的结果
-hutil.copy(p/'spam.txt',p/'some_folder/eggs.txt')
+shutil.copy(p/'spam.txt',p/'some_folder/eggs.txt')
 
 # 可以实现文件夹下的所有内容，复制到新的文件夹
 shutil.copytree(p/'spam',p/'spam_backup')
