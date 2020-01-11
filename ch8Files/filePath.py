@@ -27,7 +27,7 @@ os.getcwd()
 os.chdir('E:\\桌面')
 
 #创建目录
-#os.makedirs('.\\book')
+os.makedirs('.\\book')
 
 # 返回绝对路径
 os.path.abspath('.')
