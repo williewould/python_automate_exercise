@@ -21,3 +21,30 @@ shutil.copytree(p/'spam',p/'spam_backup')
 
 # 移动文件(剪切命令)， 必须要制定到文件名否则不运行？
 shutil.move(p/'spam.txt',p/'eggs/spam.txt')
+
+# 删除文件的两种方法
+# 永久删除 os.unlink()
+import shutil,os
+from pathlib import Path
+#得到目录中后缀为.rxt的所有文件
+for filename in Path.home().glob('*.rxt'):
+    print(filename)
+    #os.unlik(filename)    #确定删除的目录是要删除的文件后，再执行永久删除
+
+# 送到回收站 send2trash
+import send2trash
+baconFile = open('bacon.txt','a')    #新建文件
+baconFile.write('bacon is not a vegetable')
+baconFile.close()
+send2trash.send2trash('bacon.txt')
+
+# 遍历文件树 os.walk() 函数
+ for folderName, subfolders, filenames in os.walk('C:\\Users\\zhaowu\\spam'):
+    print('The current folder is '+folderName)
+    for subfolder in subfolders:
+        print('SUBFOLDER OF ' + folderName + ':' + subfolder)
+    for filename in filenames:
+        print('FILE INSIDE ' + folderName + ':' + filename)
+    print('')
+
+# TODO 压缩文件

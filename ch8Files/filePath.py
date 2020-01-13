@@ -26,7 +26,7 @@ os.getcwd()
 #改变当前目录为
 os.chdir('E:\\桌面')
 
-#创建目录
+#创建目录 【创建文件夹】
 os.makedirs('.\\book')
 
 # 返回绝对路径
@@ -72,7 +72,7 @@ p = Path('spam.txt')
 p.write_text('Hello,world!')
 p.read_text()
 
-# 打开文件，并得到一个file对象
+# 打开文件，并得到一个file对象 【打开的同时也创建了文件】
 helloFile = open('E:\\桌面\\spam.txt')
 helloContent = helloFile.read()
 

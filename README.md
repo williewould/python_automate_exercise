@@ -17,3 +17,8 @@
 - only copy pdf in a folder。 **shutil模块**，**send2trash**
 - 批量修改文件名 
 - 压缩文件夹到zip文件。  **zipfile模块**
+
+### 20200114 学习 ch9 文件操作 
+- 复制 shutil.copy('dir')
+- 剪切 shutil.move('dir')
+- 删除 os.unlink('dir')  或者 send2trash.send2trash()
