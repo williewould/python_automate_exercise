@@ -24,3 +24,5 @@
 - 删除 os.unlink('dir')  或者 send2trash.send2trash()
 ### 20200114 学习 ch9 压缩文件
 - zip对象 zipfile.ZipFile()
+
+### 20200115 学习debug方法
