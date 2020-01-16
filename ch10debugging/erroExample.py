@@ -22,7 +22,7 @@ spam()
 # %%报错信息打印， 生成日志信息
 try:
     raise Exception('This is the error messgage.')
-except:
+except Exception:
     errorFile = open('errorInfo.txt', 'w')
     errorFile.write(traceback.format_exc())
     errorFile.close()
