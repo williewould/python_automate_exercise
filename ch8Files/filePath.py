@@ -15,8 +15,8 @@ os.path.join('usr','bin','spam')
 myFiles=['a.txt','d.csv','i.docx']
 for filename in myFiles:
     print(os.path.join('E:\\desktop',filename))
-    
-    
+
+
 
 #%% 目录基本操作
 import os    
