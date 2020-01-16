@@ -27,4 +27,4 @@
 - zip对象 zipfile.ZipFile()
 
 ### 20200115 学习debug方法
-TODO logging
+TODO logging test
