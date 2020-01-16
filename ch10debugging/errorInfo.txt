@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "<ipython-input-4-dd4ca4fbc2a4>", line 2, in <module>
+    raise Exception('This is the error messgage.')
+Exception: This is the error messgage.
