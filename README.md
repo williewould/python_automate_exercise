@@ -27,4 +27,7 @@
 - zip对象 zipfile.ZipFile()
 
 ### 20200115 学习debug方法
-- logging test 利用logging module 代替print() 函数，可以更方便地调试程序
+- Assertions 用来合理性检查，及早发现不合理的部分，并立刻中断程序
+- Try and Expect 用来处理异常，而不中断程序
+- logging  利用logging module 代替print() 函数，可以更方便地调试程序，而避免误删除print
+- debugging tools 用来逐步执行程序，并检查变量变化
