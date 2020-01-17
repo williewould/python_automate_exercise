@@ -27,4 +27,4 @@
 - zip对象 zipfile.ZipFile()
 
 ### 20200115 学习debug方法
-TODO logging test
+- logging test 利用logging module 代替print() 函数，可以更方便地调试程序
