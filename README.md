@@ -32,7 +32,7 @@
 - logging  利用logging module 代替print() 函数，可以更方便地调试程序，而避免误删除print
 - debugging tools 用来逐步执行程序，并检查变量变化
 ### 20200117 学习简单的爬虫 web scraping
-- webbrowser
+- webbrowser 用来在浏览器中打开字符串指示的网页
 - requests
 - bs4
 - selenium

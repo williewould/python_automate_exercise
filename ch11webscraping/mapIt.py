@@ -14,7 +14,7 @@ import pyperclip
 if len(sys.argv) > 1:
     # Get address from command line.
     address = ' '.join(sys.argv[1:])
-    print(address)
+    # print(address)
 else:
     # Get address from clipboard.
     address = pyperclip.paste()
