@@ -16,6 +16,7 @@ import os
 
 res = requests.get('https://nostarch.com')
 res.raise_for_status()
+# 将网页内容 进行解析 解析的是.text属性下的内容
 noStarchSoup = bs4.BeautifulSoup(res.text, 'html.parser')
 print(type(noStarchSoup))
 print(os.getcwd())

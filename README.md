@@ -31,8 +31,8 @@
 - Try and Expect 用来处理异常，而不中断程序
 - logging  利用logging module 代替print() 函数，可以更方便地调试程序，而避免误删除print
 - debugging tools 用来逐步执行程序，并检查变量变化
-### 20200117 学习简单的爬虫 web scraping
+### 20200117-0120 学习简单的爬虫 web scraping
 - webbrowser 用来在浏览器中打开字符串指示的网页
-- requests
-- bs4
+- requests   获得网页内容
+- bs4        对网页解析，得到tag标签对应的内容
 - selenium
