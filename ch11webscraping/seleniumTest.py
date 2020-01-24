@@ -3,7 +3,7 @@
 Created on 2020/01/22
 @Version:    1.0
 @author :    zhaowu
-@Ref    :    测试selenium模块的功能
+@Ref    :    测试selenium模块的功能,因为这里用的是conda的虚拟环境，所以geckodiver要放在个根目录下
 '''
 
 from selenium import webdriver
@@ -17,6 +17,7 @@ try:
     print('Found <%s> element with that class name!' % (elem.tag_name))
 except Exception:
     print('Was not able to find an element with that name')
+# 网页上执行点击操作
 linkElem = browser.find_element_by_link_text('Read Online for Free')
 print(type(linkElem))
 linkElem.click()
@@ -34,4 +35,6 @@ browser3.get('https://nostarch.com')
 htmlElem = browser3.find_element_by_tag_name('html')
 htmlElem.send_keys(Keys.END)
 htmlElem.send_keys(Keys.HOME)
+browser.quit()
+browser2.quit()
 browser3.quit()

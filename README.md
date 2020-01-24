@@ -35,4 +35,8 @@
 - webbrowser 用来在浏览器中打开字符串指示的网页
 - requests   获得网页内容
 - bs4        对网页解析，得到tag标签对应的内容
-- selenium
+- selenium   可以直接对网页进行操作，包括寻找tag,点击,登录等等
+
+### 20200123 学习利用python操作excel spreadsheets
+
+
