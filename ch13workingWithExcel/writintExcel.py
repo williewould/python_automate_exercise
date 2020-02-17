@@ -57,3 +57,25 @@ sheet5['A1'] = 'Twelve cells merged together.'
 sheet5.merge_cells('C5:D5')
 sheet5['C5'] = 'Tow merged cells.'
 wb5.save('merged.xlsx')
+
+# %% freeze panes 冻结窗格
+wb6 = openpyxl.load_workbook('produceSales.xlsx')
+sheet6 = wb6.active
+sheet6.freeze_panes = 'A2'
+wb6.save('freezeExample.xlsx')
+# %% chart 图表
+wb7 = openpyxl.Workbook()
+sheet7 = wb7.active
+for i in range(1, 11):
+    sheet7['A'+str(i)] = i
+# 划定取用数据的范围refObj,+序列名字，构成一个series
+refObj = openpyxl.chart.Reference(
+    sheet7, min_col=1, min_row=1, max_col=1, max_row=10)
+seriesObj = openpyxl.chart.Series(refObj, title='First series')
+# 其他类型 .LineChart(), .ScatterChart(), PieChart()
+chartObj = openpyxl.chart.BarChart()
+chartObj.title = 'My Chart'
+# 利用series生成chart
+chartObj.append(seriesObj)
+sheet.add_chart(chartObj, 'C5')
+wb7.save('sampleChart.xlsx')

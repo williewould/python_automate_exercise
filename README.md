@@ -37,6 +37,7 @@
 - bs4        对网页解析，得到tag标签对应的内容
 - selenium   可以直接对网页进行操作，包括寻找tag,点击,登录等等
 
-### 20200123 学习利用python操作excel spreadsheets
-
+### 20200123-2020021 学习利用python操作excel spreadsheets
+- .freeze_panes = 'B2' 可以冻结窗格首行首列
+- .add_chart() 可以在sheet中添加图表
 
