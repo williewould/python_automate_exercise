@@ -41,3 +41,8 @@
 - .freeze_panes = 'B2' 可以冻结窗格首行首列
 - .add_chart() 可以在sheet中添加图表
 
+### 20200219-    学习利用python操作PDF 和 word文档
+- PyPDF2 读取PDF文档并提取文本信息
+> PyPDF2.PdfFileReader(open())
+> pdfReader.getPage()
+> pageObj.extractText()
