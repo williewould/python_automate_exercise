@@ -23,4 +23,3 @@ print(pdfReader2.getPage(0))
 pdfReader2.decrypt('rosebud')
 pageObj2 = pdfReader2.getPage(0)
 print(pageObj2.extractText())
-
